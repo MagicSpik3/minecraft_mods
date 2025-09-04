@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:bee",
+  "components": {
+    "minecraft:is_tamed": {},
+    "minecraft:tamable": {
+      "probability": 0.33,
+      "tame_items": [
+        "minecraft:dandelion",
+        "minecraft:poppy",
+        "minecraft:blue_orchid",
+        "minecraft:allium",
+        "minecraft:azure_bluet",
+        "minecraft:red_tulip",
+        "minecraft:orange_tulip",
+        "minecraft:white_tulip",
+        "minecraft:pink_tulip",
+        "minecraft:oxeye_daisy",
+        "minecraft:cornflower",
+        "minecraft:lily_of_the_valley",
+        "minecraft:wither_rose",
+        "minecraft:sunflower",
+        "minecraft:lilac",
+        "minecraft:rose_bush",
+        "minecraft:peony"
+      ]
+    },
+    "minecraft:sittable": {},
+    "minecraft:behavior.follow_owner": {
+      "priority": 5,
+      "speed_modifier": 1.0,
+      "stop_distance": 6,
+      "start_distance": 2
+    },
+    "minecraft:behavior.owner_hurt_by_target": {
+      "priority": 1
+    },
+    "minecraft:behavior.owner_hurt_target": {
+      "priority": 2
+    }
+  },
+  "component_groups": {
+    "minecraft:bee_has_stung": {
+      "minecraft:timer": {
+        "time_down_event": {
+          "event": "minecraft:become_calm"
+        },
+        "looping": false,
+        "time": 60
+      }
+    }
+  }
+}
