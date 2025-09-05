@@ -3,7 +3,7 @@
   "components": {
     "minecraft:is_tamed": {},
     "minecraft:tamable": {
-      "probability": 0.33,
+      "probability": 1,
       "tame_items": [
         "minecraft:dandelion",
         "minecraft:poppy",
