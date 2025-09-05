@@ -1,0 +1,1 @@
+effect give HyperElipse jump_boost 1 10
