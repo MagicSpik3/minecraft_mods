@@ -1,3 +1,4 @@
+# File: data/death_compass/function/cleanup.mcfunction
 # Runs when a player gets close to their grave marker.
 
 # Announce that the items have been recovered.

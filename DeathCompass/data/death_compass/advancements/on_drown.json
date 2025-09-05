@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "drowned": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_drowning": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "death_compass:on_death"
+  }
+}

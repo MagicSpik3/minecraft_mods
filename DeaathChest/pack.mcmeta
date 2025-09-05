@@ -1,0 +1,25 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "DeathChest",
+                "color": "gold"
+            },
+            " ",
+            {
+                "text": "by ikafly144",
+                "color": "aqua"
+            },
+            "\n",
+            {
+                "text": "Release in modrinth",
+                "color": "green"
+            }
+        ],
+        "pack_format": 71,
+        "supported_formats": {
+            "max_inclusive": 81,
+            "min_inclusive": 71
+        }
+    }
+}

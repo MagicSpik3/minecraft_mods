@@ -13,11 +13,13 @@ execute in minecraft:the_nether run scoreboard players set @s deathDim -1
 
 # Place the grave chest and sign
 setblock ~ ~ ~ chest
-setblock ~ ~1 ~ oak_sign{front_text:{messages:['{"text":""}','{"selector":"@s"}','{"text":"\'s Grave"}','{"text":""}']}}
-
+#setblock ~ ~1 ~ oak_sign{front_text:{messages:['{"text":""}','{"selector":"@s"}','{"text":"\'s Grave"}','{"text":""}']}}
+# Correct line:
+setblock ~ ~1 ~ oak_sign{front_text:{messages:['{"text":""}', '{"selector":"@s"}', '{"text":" Grave"}', '{"text":""}']}}
 # Tell the player their coordinates in chat
 tellraw @s ["",{"text":"[Death Compass] ","color":"gold"},{"text":"You died at ","color":"white"},{"text":"X:","color":"red"},{"score":{"name":"@s","objective":"deathX"},"color":"red"},{"text":" Y:","color":"green"},{"score":{"name":"@s","objective":"deathY"},"color":"green"},{"text":" Z:","color":"blue"},{"score":{"name":"@s","objective":"deathZ"},"color":"blue"}]
 
 # Give the player the special compass with the namespaced NBT tag
 # give @s minecraft:compass{death_compass:{is_grave_compass:1b}} 1
 
+advancement revoke @s only death_compass:on_drown

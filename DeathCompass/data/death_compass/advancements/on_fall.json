@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "fell": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_fall": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "death_compass:on_death"
+  }
+}
